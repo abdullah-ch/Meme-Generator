@@ -1,5 +1,6 @@
-Special Thanks to Bob Ziroll for the best react course out there ! https://www.youtube.com/watch?v=DLX62G4lc44 
+Live link = https://nervous-einstein-89a65d.netlify.app/
 
+Special Thanks to Bob Ziroll for the best react course out there ! https://www.youtube.com/watch?v=DLX62G4lc44 
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
