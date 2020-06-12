@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+
+
 export class MemeGenerator extends React.Component {
   constructor() {
     super();
