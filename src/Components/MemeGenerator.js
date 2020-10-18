@@ -19,7 +19,7 @@ export class MemeGenerator extends React.Component {
 
   componentDidMount() {
     fetch("https://api.imgflip.com/get_memes")
-      .then((response) => response.json())  
+      .then((response) => response.json())
       .then((response) => {
         const { memes } = response.data;
         this.setState({ allMemeImages: memes });
@@ -93,7 +93,7 @@ export class MemeGenerator extends React.Component {
             value={this.state.bottomText}
           />
 
-          <button onClick={this.handleClick}>Gen</button>
+          <button onClick={this.handleClick}>Generate</button>
 
           <div className="meme">
             <img src={this.state.randomImage} alt="" />
@@ -101,13 +101,24 @@ export class MemeGenerator extends React.Component {
             <h2 className="bottom">{this.state.bottomText}</h2>
           </div>
         </form>
-        <a
-          type="button" class="btn btn-primary"
-          href={this.state.randomImage} download onClick={this.handleDownload}>
-          <i className="fa fa-download" />
-          Download the MEME  Template 
+        <div style={{
+          margin: '0 auto; ',
+          'max-width': '50%;'
+        }}>
+          <a
+            type="button" className="btn btn-primary"
+            style={{
+              margin: '0 auto; ',
+
+            }}
+            href={this.state.randomImage
+            } download onClick={this.handleDownload}>
+            <i className="fa fa-download" />
+          Download the MEME
         </a>
-      </div>
+        </div>
+
+      </div >
     );
   }
 }
