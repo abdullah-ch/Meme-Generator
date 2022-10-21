@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
-    "babel-loader": "^8.1.0"
+    "babel-loader": "^8.1.0",
+    "prettier": "^2.7.1"
   }
 }
