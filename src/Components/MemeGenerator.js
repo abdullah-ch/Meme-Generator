@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 
-
 export class MemeGenerator extends React.Component {
   constructor() {
     super();
@@ -101,24 +100,27 @@ export class MemeGenerator extends React.Component {
             <h2 className="bottom">{this.state.bottomText}</h2>
           </div>
         </form>
-        <div style={{
-          margin: '0 auto; ',
-          'max-width': '50%;'
-        }}>
+        <div
+          style={{
+            margin: "0 auto; ",
+            "max-width": "50%;",
+          }}
+        >
           <a
-            type="button" className="btn btn-primary"
+            type="button"
+            className="btn btn-primary"
             style={{
-              margin: '0 auto; ',
-
+              margin: "0 auto; ",
             }}
-            href={this.state.randomImage
-            } download onClick={this.handleDownload}>
+            href={this.state.randomImage}
+            download
+            onClick={this.handleDownload}
+          >
             <i className="fa fa-download" />
-          Download the MEME
-        </a>
+            Download the MEME
+          </a>
         </div>
-
-      </div >
+      </div>
     );
   }
 }
